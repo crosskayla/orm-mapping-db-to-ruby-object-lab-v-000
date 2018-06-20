@@ -27,6 +27,10 @@ class Student
     WHERE name = ?
     LIMIT 1
     SQL
+    
+    DB[:conn].execute(sql).collect do |row|
+    end.first
+    
   end
   
   def save
