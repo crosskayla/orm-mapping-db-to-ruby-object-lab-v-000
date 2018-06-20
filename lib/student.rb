@@ -82,7 +82,9 @@ class Student
     WHERE grade < 12
     SQL
     
-    test = DB[:conn].execute(sql)
+    [:conn].execute(sql).map do |row|
+      self.new_from_db(row)
+    end
   end
   
 end
