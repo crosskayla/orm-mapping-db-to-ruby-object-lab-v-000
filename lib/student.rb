@@ -82,7 +82,7 @@ class Student
     WHERE grade < 12
     SQL
     
-    test = DB[:conn].execute(sql).flatten
+    test = DB[:conn].execute(sql)
     binding.pry
     
   end
