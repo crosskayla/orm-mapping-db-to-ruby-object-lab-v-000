@@ -61,5 +61,12 @@ class Student
   end
   
   def self.count_all_studnets_in_grade_9
+    
+    sql = <<-SQL 
+    SELECT *
+    FROM students
+    
+    SQL
+    
   end
 end
