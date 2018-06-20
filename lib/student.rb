@@ -82,9 +82,7 @@ class Student
     WHERE grade < 12
     SQL
     
-    test = DB[:conn].execute(sql)
-    binding.pry
-    
+    test = DB[:conn].execute(sql).first
   end
   
 end
