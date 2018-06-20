@@ -82,7 +82,7 @@ class Student
     WHERE grade < 12
     SQL
     
-    test = DB[:conn].execute(sql).first
+    test = DB[:conn].execute(sql)
   end
   
 end
