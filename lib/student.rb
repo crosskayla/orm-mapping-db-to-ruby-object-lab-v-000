@@ -28,7 +28,8 @@ class Student
     LIMIT 1
     SQL
     
-    DB[:conn].execute(sql).collect do |row|
+    DB[:conn].execute(sql, name).collect do |row|
+      
     end.first
     
   end
